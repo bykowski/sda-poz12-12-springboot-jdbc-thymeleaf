@@ -1,0 +1,27 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="../static/css/css.css" th:href="@{/css/css.css}" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+<h1>Elo!</h1>
+
+<form action="#" th:action="@{/add}" th:object="${student}" method="post">
+    <p>Id: <input type="text" th:field="*{id}"></p>
+    <p>Name: <input type="text" th:field="*{name}"></p>
+    <p>Surname: <input type="text" th:field="*{surname}"></p>
+    <p>Final Grade: <input type="text" th:field="*{finalGrade}"></p>
+    <p><input type="submit" value="add student!!!!!!"></p>
+</form>
+
+
+</body>
+</html>
